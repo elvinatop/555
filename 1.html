@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт - Главная</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-image {
+            width: 100%;
+            height: 150px;
+            background-color: #34495e;
+            background-image: url('https://via.placeholder.com/1200x150/34495e/ffffff?text=Шапка+сайта');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        
+        nav {
+            width: 200px;
+            background-color: #34495e;
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #2c3e50;
+        }
+        
+        main {
+            flex: 1;
+            padding: 1rem;
+            background-color: white;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .formatted-text {
+            margin: 15px 0;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        .italic {
+            font-style: italic;
+        }
+        
+        .underline {
+            text-decoration: underline;
+        }
+        
+        .strikethrough {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-image"></div>
+            <h1>Мой личный сайт</h1>
+        </header>
+        
+        <div class="content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">О себе</a></li>
+                    <li><a href="about_direction.html">О направлении</a></li>
+                    <li><a href="about_nf_uanit.html">О НФ УУНиТ</a></li>
+                    <li><a href="about_info_security.html">Об информационной безопасности</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <!-- Контент будет меняться в зависимости от страницы -->
+                <h2>О себе</h2>
+                <p>Добро пожаловать на мою страницу! Здесь я расскажу немного о себе.</p>
+                
+                <h3>Мои навыки</h3>
+                <table>
+                    <tr>
+                        <th>Навык</th>
+                        <th>Уровень</th>
+                        <th>Годы опыта</th>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>Продвинутый</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Средний</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Средний</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+                
+                <h3>Мои увлечения</h3>
+                <ul>
+                    <li>Программирование</li>
+                    <li>Чтение книг</li>
+                    <li>Путешествия</li>
+                    <li>Фотография</li>
+                </ul>
+                
+                <h3>Мои цели на этот год</h3>
+                <ol>
+                    <li>Завершить этот курс</li>
+                    <li>Изучить новый язык программирования</li>
+                    <li>Создать собственный проект</li>
+                    <li>Найти стажировку</li>
+                </ol>
+                
+                <div class="formatted-text">
+                    <p>Примеры форматирования текста:</p>
+                    <p class="bold">Этот текст написан жирным шрифтом.</p>
+                    <p class="italic">Этот текст написан курсивом.</p>
+                    <p class="underline">Этот текст подчеркнут.</p>
+                    <p class="strikethrough">Этот текст зачеркнут.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>ФИО разработчика: Галимьянова Эльвина Радиковна</p>
+        </footer>
+    </div>
+</body>
+</html>
